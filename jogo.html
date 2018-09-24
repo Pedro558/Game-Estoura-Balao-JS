@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+	</head>
+
+	<style type="text/css">
+		.items{
+			display: grid;
+			grid-template-columns: 0.1fr;
+			grid-gap: 1em;
+			grid-auto-rows: minmax(100px, auto);
+		}
+		.box{
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+		}
+		.cent{
+			align-self: center;
+			text-align: left;
+		}
+		.back{
+			grid-column: 2;
+			grid-row: 1/4;
+			background: url("imagens/cenario.png");	
+		    background-repeat: no-repeat;
+		    background-size: 100% 100%;
+		}
+		.box > div{
+			border:1px solid green;
+			padding: 1em;
+		}
+		.items > div{
+			border:1px solid red;
+			padding: 1em;
+		}
+	</style>
+
+	<body>
+		<section class="items">
+			<div class="box">
+				<div>
+					<img src="imagens/balao_azul_grande.png">
+				</div>
+				<div class="cent">
+					10
+				</div>
+			</div>
+
+			<div class="box">
+				<div>
+					<img src="imagens/balao_azul_grande_estourado.png">
+				</div>
+				<div class="cent">
+					10
+				</div>
+			</div>
+
+			<div class="box">
+				<div>
+					<img src="imagens/cronometro.png">
+				</div>
+				<div class="cent">
+					Time
+				</div>
+			</div>
+
+			<div class="back">
+				
+			</div>
+
+
+		</section>
+	</body>
+	
+</html>
